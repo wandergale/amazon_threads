@@ -15,7 +15,7 @@ public class Producer implements Runnable {
             int item = rand.nextInt(RANGE);
             buffer.addToBuffer(item);
             try {
-                Thread.sleep(rand.nextInt(2000)); // Simula o tempo para produzir um novo item
+                Thread.sleep(rand.nextInt(2000));
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

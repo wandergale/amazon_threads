@@ -10,7 +10,7 @@ public class Consumer implements Runnable {
         while (true) {
             buffer.removeFromBuffer();
             try {
-                Thread.sleep(1100); // Simula o tempo para consumir um item
+                Thread.sleep(1100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
